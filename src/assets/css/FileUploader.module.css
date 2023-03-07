@@ -1,0 +1,70 @@
+.FileUploader {
+    height: auto;
+    width: 500px;
+    z-index: 100 !important;
+    /* opacity: .6; */
+    position: relative;
+    border: 4px dashed rgba(200,200,200, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: .3s ease-out;
+}
+
+.FileUploader:hover {
+    background: #202020;
+}
+
+.FileUploader svg {
+    opacity: .6;
+}
+
+.FileUploader button {
+    /* margin: 2rem; */
+    padding: .8rem 1.5rem;
+    background: none;
+    border: 2px solid var(--blue);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease-out;
+    display: block;
+}
+
+.FileUploader button:hover {
+    background: var(--blue);
+}
+
+#info {
+    text-align: center;
+    opacity: .6;
+    font-size: .8rem;
+}
+
+
+#svgIcoContainer {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.FileUploader div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#dragndropinfo {
+    opacity: .6;
+    font-size: .8rem;
+    text-align: center;
+}
+
+#opts {
+    transition: .2s ease-out;
+}
+
+#uploadList {
+    border: 1px solid red;
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:wght@400;600&display=swap');
+
+html,
+body {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-dark);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  image-rendering: high-quality;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: var(--bg-dark);
+  }
+}
+
+:root {
+  --bg-dark: #171717;
+  --purple: #6D28D9;
+  --blue: #2563EB;
+  --green-aqua: #0E7490;
+  --green-dark: #0F766E;
+  --yellow: #FCC41C;
+  --pinky: #EF5A62;
+  
+
+}
+
+
+.App {
+    /* border: 1px solid red; */
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}

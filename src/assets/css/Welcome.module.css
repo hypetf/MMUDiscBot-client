@@ -1,0 +1,33 @@
+.Welcome {
+    height: auto;
+    width: 100%;
+    margin-left: 28vh;
+    padding: 5rem;
+}
+
+.Welcome p {
+    color: var(--bg-dark);
+    -webkit-text-stroke: 1px #fff;
+    /* filter: drop-shadow(0 0 2px #fff); */
+    font-size: 5rem;
+    width: 40%;
+    /* border: 1px solid red; */
+    display: block;
+}
+
+.Welcome h1 {
+    /* letter-spacing: .6rem; */
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.Welcome * {
+    position: relative;
+    z-index: 1 !important;
+}
+
+.discbg {
+    position: absolute;
+    right: 10rem;
+    opacity: .1;
+    width: 80%;
+}

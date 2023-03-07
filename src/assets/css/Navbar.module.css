@@ -1,0 +1,43 @@
+.Navbar {
+    position: absolute;
+    top: 0;
+    height: auto;
+    width: 100%;
+    padding: 3rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Navbar ul li {
+    display: inline;
+    margin: 0 2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+#DiscordLoginBtn {
+    border: 2px solid var(--blue);
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    transition: .2s ease-in;
+}
+
+#DiscordLoginBtn:hover {
+    background: var(--blue);
+}
+
+.link {
+    opacity: .5;
+    transition: .2s ease-out;
+}
+
+.link:hover {
+    opacity: 1;
+}
