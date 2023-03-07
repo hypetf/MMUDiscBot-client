@@ -18,7 +18,7 @@ This project is developed on NodeJS v16.14.2.<br/>
 
 1. Clone the repository inside your project folder.
     ```sh
-    git clone https://github.com/hypetf/.git
+    git clone https://github.com/hypetf/MMUBot-client.git
     ```
 2. Install all required npm packages by running:
     ```sh
