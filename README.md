@@ -26,7 +26,7 @@ This project is developed on NodeJS v16.14.2.<br/>
     ```
 3. Get the client running with:
     ```sh
-    npm run client
+    npm run dev
     ```
 
 Client should be live on:
