@@ -1,0 +1,24 @@
+.UserMenu {
+    height: 2.75rem;
+    width: 2.75rem;
+    z-index: 10;
+    position: relative;
+}
+
+#avatarBg {
+    height: 2.75rem;
+    width: 2.75rem;
+    background-size: contain;
+    border-radius: 100%;
+    transition: .2s ease-out;
+    opacity: .6;
+    margin: 0 !important;
+    cursor: pointer;
+    z-index: 100 !important;
+    /* position: absolute; */
+}
+
+#avatarBg:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 5px var(--blue));
+}

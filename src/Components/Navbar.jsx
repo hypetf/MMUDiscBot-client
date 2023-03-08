@@ -1,19 +1,34 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from '../assets/css/Navbar.module.css'
+import useUserStore from '../utils/userStore'
+import UserMenu from './UserMenu';
 
 export default function Navbar() {
+  const user = useUserStore(state => state.user);
   return (
     <nav className={styles.Navbar}>
-        <ul>
-            <Link to={"/"}>
-              <li className={styles.link}>About</li>
+      <div id={styles.ul}>
+        <Link to={"/"} className={styles.link}>
+          About
+        </Link>
+        {
+          user.username ?
+            <Link to={"/upload"} className={styles.link}>
+              Upload file
             </Link>
-            
-            <Link to={"/upload"}>
-              <li id={styles.DiscordLoginBtn}>Login with Discord</li>
+          :
+            null
+        }
+
+        {
+          user.username ? 
+            <UserMenu />
+          :
+            <Link to={"http://localhost:5000/api/auth/login"} id={styles.DiscordLoginBtn}>
+              Login with Discord
             </Link>
-        </ul>
+        }
+      </div>
     </nav>
   )
 }

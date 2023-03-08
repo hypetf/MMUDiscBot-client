@@ -43,7 +43,7 @@
 }
 
 
-#svgIcoContainer {
+.svgIcoContainer {
     height: 10rem;
     display: flex;
     align-items: center;
@@ -62,9 +62,33 @@
 }
 
 #opts {
+    display: unset;
     transition: .2s ease-out;
 }
 
 #uploadList {
     border: 1px solid red;
+}
+
+.svgLoading svg {
+    opacity: 1;
+    animation: loadingSvg 5s linear infinite;
+}
+
+
+@keyframes loadingSvg {
+    0% {
+        stroke: #fff;
+    }
+    30% {
+        stroke: var(--blue);
+        filter: drop-shadow(0 0 5px var(--blue));
+    }
+    70% {
+        stroke: var(--blue);
+        filter: drop-shadow(0 0 5px var(--blue));
+    }
+    100% {
+        stroke: #fff;
+    }
 }

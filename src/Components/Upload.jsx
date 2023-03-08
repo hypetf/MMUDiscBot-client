@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext, useEffect} from 'react'
 import styles from '../assets/css/Home.module.css'
 import FileUploader from './FileUploader'
 

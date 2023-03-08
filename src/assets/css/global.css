@@ -22,6 +22,7 @@ a {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   image-rendering: high-quality;
+  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {
