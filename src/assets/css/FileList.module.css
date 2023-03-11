@@ -1,0 +1,34 @@
+.FileList {
+    height: auto;
+    width: 30rem;
+}
+
+.FileList p:nth-child(1) {
+    opacity: .5;
+    text-align: center;
+}
+
+.AudioItem {
+    border: 1px solid var(--blue);
+    border-radius: 6px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.AudioItem img {
+    margin-right: 1rem;
+    pointer-events: none;
+}
+
+.AudioItem p {
+    margin: 0;
+}
+
+.audioLength {
+    opacity: .6;
+}
+

@@ -18,14 +18,11 @@
     align-items: center;
 }
 
-#ul * {
-    margin: 0 1.5rem;
-}
-
 .link {
     cursor: pointer;
     opacity: .5;
     transition: .2s ease-out;
+    margin: 0 1.5rem;
 }
 
 .link:hover {
@@ -37,6 +34,7 @@
     padding: 1rem 1.5rem;
     border-radius: 4px;
     transition: .2s ease-in;
+    margin: 0 1.5rem;
 }
 
 #DiscordLoginBtn:hover {

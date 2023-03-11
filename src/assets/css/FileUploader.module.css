@@ -1,8 +1,7 @@
 .FileUploader {
     height: auto;
-    width: 500px;
+    width: 35rem;
     z-index: 100 !important;
-    /* opacity: .6; */
     position: relative;
     border: 4px dashed rgba(200,200,200, .6);
     display: flex;
@@ -11,10 +10,11 @@
     align-items: center;
     border-radius: 8px;
     transition: .3s ease-out;
+    margin-bottom: 2rem;
 }
 
 .FileUploader:hover {
-    background: #202020;
+    background: #202020 !important;
 }
 
 .FileUploader svg {
@@ -22,7 +22,6 @@
 }
 
 .FileUploader button {
-    /* margin: 2rem; */
     padding: .8rem 1.5rem;
     background: none;
     border: 2px solid var(--blue);
@@ -70,7 +69,8 @@
     border: 1px solid red;
 }
 
-.svgLoading svg {
+
+/* .svgLoading svg {
     opacity: 1;
     animation: loadingSvg 5s linear infinite;
 }
@@ -91,4 +91,37 @@
     100% {
         stroke: #fff;
     }
-}
+} */
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: none;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-left: 4px solid var(--blue);
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 

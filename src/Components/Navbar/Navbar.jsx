@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import styles from '../assets/css/Navbar.module.css'
-import useUserStore from '../utils/userStore'
+import styles from '../../assets/css/Navbar.module.css'
+import useUserStore from '../../utils/userStore'
 import UserMenu from './UserMenu';
 
 export default function Navbar() {

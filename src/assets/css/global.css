@@ -43,13 +43,10 @@ a {
   --green-dark: #0F766E;
   --yellow: #FCC41C;
   --pinky: #EF5A62;
-  
-
 }
 
 
 .App {
-    /* border: 1px solid red; */
     height: auto;
     width: 100%;
     margin: 0;
@@ -57,3 +54,4 @@ a {
     display: flex;
     flex-direction: column;
 }
+

@@ -7,7 +7,6 @@ import Welcome from './Welcome'
 export default function Home() {
   return (
     <div className={styles.Home}>
-        {/* <FileUploader /> */}
         <Welcome />
     </div>
   )
