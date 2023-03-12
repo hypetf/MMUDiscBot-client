@@ -20,13 +20,13 @@
 
 #avatarBg:hover {
     opacity: 1;
-    filter: drop-shadow(0 0 5px var(--blue));
+    filter: drop-shadow(0 0 3px var(--blue));
 }
 
 .Dropdown {
     position: absolute;
     right: -.2rem;
-    top: 1rem;
+    top: 3rem;
     height: auto;
     width: max-content;
     max-width: 15rem;
@@ -37,6 +37,7 @@
     flex-direction: column;
     align-items: center;
     border-radius: 6px;
+    opacity: 0;
     transition: .2s ease-out;
 }
 
@@ -53,4 +54,16 @@
 
 #userInfo h4 {
     margin: 1rem 0 !important;
+}
+
+.usermenudown {
+    opacity: 1 !important;
+}
+
+#avatarBg:focus + .Dropdown {
+    opacity: 1 !important;
+    top: 3.5rem;
+}
+#avatarBg:focus {
+    opacity: 1 !important;
 }
