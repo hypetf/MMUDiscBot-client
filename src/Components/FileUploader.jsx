@@ -7,8 +7,6 @@ import useSongsStore from '../utils/songsStore'
 import axios from 'axios';
 
 export default function FileUploader() {
-
-  const songs = useSongsStore(state => state.songs);
   const updateSongsList = useSongsStore(state => state.updateSongsList);
   const notifyErr = (text) => toast.error(text);
   const notifyLoading = (text) => toast.loading(text);
@@ -48,7 +46,7 @@ export default function FileUploader() {
 
     axios({
       method: 'POST',
-      url: '/api/upload/audio',
+      url: '/api/audios/upload',
       data: formData
     })
     .then(res => {

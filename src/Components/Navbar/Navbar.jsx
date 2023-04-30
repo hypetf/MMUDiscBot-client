@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className={styles.Navbar}>
       <div id={styles.ul}>
-        <Link to={"/"} className={styles.link}>
+        <Link to={"/about"} className={styles.link}>
           About
         </Link>
         {
