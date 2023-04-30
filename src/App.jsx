@@ -68,7 +68,6 @@ export default function App() {
         pauseOnFocusLoss={false}
         limit={2}
       />
-      <Footer />
     </div>
   )
 }
