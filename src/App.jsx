@@ -3,7 +3,6 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import axios from 'axios';
 import Home from './Components/Home';
 import NotFound from './Components/NotFound';
-import Footer from './Components/Footer';
 import Navbar from './Components/Navbar/Navbar';
 import { ToastContainer } from 'react-toastify';
 import Upload from './Components/Upload';
